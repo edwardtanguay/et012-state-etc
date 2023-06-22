@@ -16,7 +16,7 @@ export function App() {
 
   return (
     <div className="card">
-      <CountButton count={count} setCount={setCount} />
+      <CountButton kind="up" count={count} setCount={setCount} />
       <div className={specialNumber ? `special` : 'normal'}>{count}</div>
       {count === 7 && (
         <div>Lucky Seven!</div>
@@ -30,6 +30,7 @@ export function App() {
       <div>
         Triple count is {count * 3}
       </div>
+      <CountButton kind="down" count={count} setCount={setCount} />
       <div>
         {specialNumber ? (
           <div>it's a SPECIAL NUMBER</div>
@@ -37,7 +38,7 @@ export function App() {
           <div>(normal number)</div>
         )}
       </div>
-      <CountButton count={count} setCount={setCount} />
+      <CountButton kind="down" count={count} setCount={setCount} />
     </div>
   )
 }

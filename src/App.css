@@ -13,3 +13,10 @@
   color: red;
   font-size: 4rem;
 }
+
+button.down {
+  color: red;
+}
+button.up {
+  color: green;
+}
