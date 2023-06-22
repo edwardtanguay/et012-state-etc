@@ -1,6 +1,6 @@
 interface IProps {
     count: number;
-    setCount: any;
+    setCount: (count:number) => void;
 }
 export const CountButton = ({count, setCount}: IProps) => {
     return (
